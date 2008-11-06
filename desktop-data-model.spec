@@ -5,7 +5,7 @@
 
 Name:           desktop-data-model
 Version:        1.2.5
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Engine providing live updates of online data to the desktop
 
 Group:          Graphical desktop/GNOME
