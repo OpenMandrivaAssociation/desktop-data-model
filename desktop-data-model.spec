@@ -5,13 +5,14 @@
 
 Name:           desktop-data-model
 Version:        1.2.5
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        Engine providing live updates of online data to the desktop
 
 Group:          Graphical desktop/GNOME
 License:        LGPLv2+
 URL:            http://live.gnome.org/OnlineDesktop
 Source0:        http://ftp.gnome.org/pub/GNOME/sources/%name/%name-%{version}.tar.bz2
+Patch:		desktop-data-model-1.2.5-fix-format-strings.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  gtk2-devel >= 2.6
@@ -54,6 +55,7 @@ This package contains libraries for Online Desktop Data Model.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %configure2_5x
