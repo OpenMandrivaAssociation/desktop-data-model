@@ -19,6 +19,7 @@ BuildRequires:  gtk2-devel >= 2.6
 BuildRequires:  loudmouth-devel >= 1.0.3-3
 BuildRequires:  dbus-glib-devel >= 0.61 
 BuildRequires:  gnome-desktop-devel >= 2.10.0
+BuildRequires:  gnome-vfs2-devel
 BuildRequires:  sqlite3-devel >= 3.0.0
 BuildRequires:  libxscrnsaver-devel
 Conflicts: mugshot < 1.2.1-1mdv
