@@ -5,7 +5,7 @@
 
 Name:           desktop-data-model
 Version:        1.2.5
-Release:        %mkrel 3
+Release:        %mkrel 4
 Summary:        Engine providing live updates of online data to the desktop
 
 Group:          Graphical desktop/GNOME
@@ -21,7 +21,6 @@ BuildRequires:  dbus-glib-devel >= 0.61
 BuildRequires:  gnome-desktop-devel >= 2.10.0
 BuildRequires:  sqlite3-devel >= 3.0.0
 BuildRequires:  libxscrnsaver-devel
-BuildRequires:  empathy-devel
 Conflicts: mugshot < 1.2.1-1mdv
 
 %description
@@ -58,7 +57,7 @@ This package contains libraries for Online Desktop Data Model.
 %patch -p1
 
 %build
-%configure2_5x
+%configure2_5x --without-empathy
 %make
 
 %install
